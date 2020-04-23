@@ -1,0 +1,166 @@
+﻿<html>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="styles.css" rel="stylesheet">
+    <title>insertion</title>
+<style>
+
+	
+
+	.circles
+	{
+    		position: absolute;
+    		top: 0 auto;
+    		left: 0 auto;
+    		width: 95%;
+    		height: 510%;
+    		overflow:hidden;
+	}
+	
+</style>
+</head>
+
+<body>
+<div class="area" >
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+
+	<ul class="circles1">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+
+<a href="minipro.html"><img src="home5.jpg" width=50 height=50 align="left" title=HOME></a>
+
+<a href="#bottom"><img src="down.jpg" width=60 height=60 align=right title=BOTTOMPAGE></a>
+
+<h1><center><font color="cyan" size=7 face="system">Insertion sort</center></font></h1>
+
+<h2><font color="yellow" face="harrington">Definition:-</font></h2>
+<p><font color="white">
+		The array is searched sequentially and unsorted items are moved and inserted into the sorted sub-list (in the same array). 
+		This algorithm is not suitable for large data sets as its average and worst case complexity are of O(n<sup>2</sup>). 
+		where n is the number of items.
+	</font><br>
+
+<h2><font color="yellow" face="harrington">Algorithm:-</font></h2>
+<p><font color="white">
+<pre>
+	Step 1 - If it is the first element, it is already sorted. return 1;<br>
+	Step 2 - Pick next element<br>
+	Step 3 - Compare with all elements in the sorted sub-list</br>
+	Step 4 - Shift all the elements in the sorted sub-list that is greater than the value to be sorted<br>
+	Step 5 - Insert the value<br>
+	Step 6 - Repeat until list is sorted.
+</pre>
+</font><br>
+
+<h2><font color="yellow" face="harrington">How Insertion Sort Works?</font></h2>
+<p><font color="white">
+
+We take an unsorted array for our example.
+<center><font color="cyan"><img src="i0.jpg" width=400 height=70 border=5></font></center><br>
+
+Insertion sort compares the first two elements.
+<center><font color="cyan"><img src="i1.jpg" width=400 height=70 border=5></font></center><br>
+
+It finds that both 14 and 33 are already in ascending order. For now, 14 is in sorted sub-list.
+<center><font color="cyan"><img src="i2.jpg" width=400 height=70 border=5></font></center><br>
+
+Insertion sort moves ahead and compares 33 with 27.
+<center><font color="cyan"><img src="i3.jpg" width=400 height=70 border=5></font></center><br>
+
+And finds that 33 is not in the correct position.
+<center><font color="cyan"><img src="i4.jpg" width=400 height=70 border=5></font></center><br>
+
+It swaps 33 with 27. It also checks with all the elements of sorted sub-list. Here we see that the sorted sub-list has only one element 14, and 27 is greater than 14. Hence, the sorted sub-list remains sorted after swapping.
+<center><font color="cyan"><img src="i5.jpg" width=400 height=70 border=5></font></center><br>
+
+By now we have 14 and 27 in the sorted sub-list. Next, it compares 33 with 10.
+<center><font color="cyan"><img src="i6.jpg" width=400 height=70 border=5></font></center><br>
+
+These values are not in a sorted order.
+<center><font color="cyan"><img src="i7.jpg" width=400 height=70 border=5></font></center><br>
+
+So we swap them.
+<center><font color="cyan"><img src="i8.jpg" width=400 height=70 border=5></font></center><br>
+
+However, swapping makes 27 and 10 unsorted.
+<center><font color="cyan"><img src="i9.jpg" width=400 height=70 border=5></font></center><br>
+
+Hence, we swap them too.
+<center><font color="cyan"><img src="i10.jpg" width=400 height=70 border=5></font></center><br>
+
+Again we find 14 and 10 in an unsorted order.
+<center><font color="cyan"><img src="i11.jpg" width=400 height=70 border=5></font></center><br>
+
+We swap them again. By the end of third iteration, we have a sorted sub-list of 4 items.
+<center><font color="cyan"><img src="i12.jpg" width=400 height=70 border=5></font></center><br>
+
+This process goes on until all the unsorted values are covered in a sorted sub-list. 
+<br>
+<br>
+
+
+<h2><font color="yellow" face="harrington">Insertion Sort working model:-</font></h2>
+<p><font color="white">Until the data in the list is sorted in ascending order the operation will be performed.
+The following model shows the working of insertion sort technique:
+<br>
+<center><font color="cyan">
+<img src="insertiongif.gif" alt="animated gif" height=300 width=400 border=7>
+</font></center></img>
+<br>
+
+
+
+<h2><font color="yellow" face="harrington">Time complexity chart:-</font></h2>
+<center><table border=5 bordercolor="cyan">
+<tr>
+	<td>
+		<font size=5 color="yellow">CASES</font>
+	</td>
+	<td>
+		<font size=5 color="yellow">TIME COMPLEXITY</font>
+	</td>
+</tr>
+<tr>
+	<td>
+		<font color="white">
+				<pre>Best case:-    <br></pre> 
+			     	<pre>Average case:- <br></pre>
+			     	<pre>Worst case:-   </pre>
+		</font>
+	</td>
+	<td>
+		<font color="white">
+			<pre>     O(n)<br></pre>
+			<pre>     O(n<sup>2</sup>)<br></pre>
+			<pre>     O(n<sup>2</sup>)</pre>
+	</td>
+</tr>
+
+</table>
+</center>		
+<a name="bottom"</a>
+
+</div>
+</body>
+</html>

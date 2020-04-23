@@ -1,0 +1,150 @@
+﻿<html>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="styles.css" rel="stylesheet">
+    <title>merge</title>
+<style>
+
+	
+
+	.circles
+	{
+    		position: absolute;
+    		top: 0 auto;
+    		left: 0 auto;
+    		width: 95%;
+    		height: 403%;
+    		overflow:hidden;
+	}
+	
+</style>
+</head>
+
+<body>
+<div class="area" >
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+
+	<ul class="circles1">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+
+		
+
+
+<a href="minipro.html"><img src="home5.jpg" width=50 height=50 align="left" title=HOME></a>
+
+<a href="#bottom"><img src="down.jpg" width=60 height=60 align="right" title=BOTTOMPAGE></a>
+
+
+<h1><center><font color="cyan" size=7 face="system">Merge sort</center></font></h1>
+
+<h2><font color="yellow" face="harrington">Definition:-</font></h2>
+<p><font color="white">
+		Merge sort is a sorting technique based on divide and conquer technique. With worst-case time complexity being ?(n log n), it is one of the most respected algorithms.
+		Merge sort first divides the array into equal halves and then combines them in a sorted manner.
+	</font>
+<h2><font color="yellow" face="harrington">Algorithm:-</font></h2>
+<p><font color="white">
+	Merge sort keeps on dividing the list into equal halves until it can no more be divided. 
+	By definition, if it is only one element in the list, it is sorted. 
+	Then, merge sort combines the smaller sorted lists keeping the new list sorted too.<br><br>
+
+	Step 1 - if it is only one element in the list it is already sorted, return.<br>
+	Step 2 - divide the list recursively into two halves until it can no more be divided.<br>
+	Step 3 - merge the smaller lists into new list in sorted order.<br>
+
+<h2><font color="yellow" face="harrington">How Merge Sort Works?</font></h2>
+<p><font color="white">
+
+To understand merge sort, we take an unsorted array as the following -
+<center><font color="cyan"><img src="m1.jpg" width=400 height=70 border=5></font></center><br>
+
+
+We know that merge sort first divides the whole array iteratively into equal halves unless the atomic values are achieved. We see here that an array of 8 items is divided into two arrays of size 4.
+<center><font color="cyan"><img src="m2.jpg" width=430 height=70 border=5></font></center><br>
+
+This does not change the sequence of appearance of items in the original. Now we divide these two arrays into halves.
+<center><font color="cyan"><img src="m3.jpg" width=450 height=70 border=5></font></center><br>
+
+
+We further divide these arrays and we achieve atomic value which can no more be divided.
+<center><font color="cyan"><img src="m4.jpg" width=470 height=70 border=5></font></center><br>
+
+Now, we combine them in exactly the same manner as they were broken down. Please note the color codes given to these lists.
+
+We first compare the element for each list and then combine them into another list in a sorted manner. We see that 14 and 33 are in sorted positions. We compare 27 and 10 and in the target list of 2 values we put 10 first, followed by 27. We change the order of 19 and 35 whereas 42 and 44 are placed sequentially.
+<center><font color="cyan"><img src="m5.jpg" width=450 height=70 border=5></font></center><br>
+
+In the next iteration of the combining phase, we compare lists of two data values, and merge them into a list of found data values placing all in a sorted order.
+<center><font color="cyan"><img src="m6.jpg" width=430 height=70 border=5></font></center><br>
+
+
+After the final merging, the list should look like this -
+<center><font color="cyan"><img src="m7.jpg" width=400 height=70 border=5></font></center><br>
+
+<h2><font color="yellow" face="harrington">Merge Sort working model:-</font></h2>
+<p><font color="white">Until the data in the list is sorted in ascending order the operation will be performed.
+In this array is going to divide into various number of sub-parts and after sorting them in ascending order the 
+data is again merged into a single array.<br>
+Observe the following Merge Sort working model:
+<br>
+<center><font color="cyan">
+<img src="mergegif.gif" alt="animated gif" height=400 width=500 border=7>
+</font></center></img>
+<br>
+
+
+
+<h2><font color="yellow" face="harrington">Time complexity chart:-</font></h2><br>
+<center><table border=5 bordercolor="cyan">
+<tr>
+	<td>
+		<font size=5 color="yellow">CASES</font>
+	</td>
+	<td>
+		<font size=5 color="yellow">TIME COMPLEXITY</font>
+	</td>
+</tr>
+<tr>
+	<td>
+		<font color="white">
+				<pre>Best case:-    <br></pre> 
+			     	<pre>Average case:- <br></pre>
+			     	<pre>Worst case:-   </pre>
+		</font>
+	</td>
+	<td>
+		<font color="white">
+			<pre>     O(nlogn)<br></pre>
+			<pre>     O(nlogn)<br></pre>
+			<pre>     O(nlogn)</pre>
+	</td>
+</tr>
+</table>
+</center>		
+
+<a name="bottom"></a>
+<br>
+</div>
+</body>
+</html>

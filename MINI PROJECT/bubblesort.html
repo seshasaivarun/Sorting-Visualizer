@@ -1,0 +1,159 @@
+﻿<html>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="styles.css" rel="stylesheet">
+    <title>bubble</title>
+<style>
+
+	
+
+	.circles
+	{
+    		position: absolute;
+    		top: 0 auto;
+    		left: 0 auto;
+    		width: 95%;
+    		height: 507%;
+    		overflow:hidden;
+	}
+	
+</style>
+</head>
+
+<body>
+
+
+<div class="area" >
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+
+	<ul class="circles1">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+		
+
+
+<a href="minipro.html"><img src="home5.jpg" width=50 height=50 align="left" title=HOME></a>
+
+<a href="#bottom"><img src="down.jpg" width=60 height=60 align="right" title=BOTTOMPAGE></a>
+
+<h1><center><font color="cyan" size=7 face="system">Bubble sort</center></font></h1>
+
+<h2><font color="yellow" face="harrington">Definition:-</font></h2>
+<p><font color="white">Bubble sort is a simple sorting algorithm. This sorting algorithm is comparison-based algorithm in which each pair of adjacent elements is compared and the elements are swapped if they are not in order. This algorithm is not suitable for large data sets as its average and worst case complexity are of O(n<sup>2</sup>) where n is the number of items.
+    </font>
+<h2><font color="yellow" face="harrington">Algorithm:-</font></h2>
+<p><font color="white">
+
+<pre>begin BubbleSort(list)<br>
+	for all elements of list<br>
+      	     if list[i] > list[i+1]<br>
+         	swap(list[i], list[i+1])<br>
+      	     end if<br>
+        end for<br>
+   
+     return list<br>
+   
+end BubbleSort
+</pre>
+</font>
+
+<h2><font color="yellow" face="harrington">How Bubble Sort Works?</font></h2>
+<p><font color="white">
+We take an unsorted array for our example.<br> 
+<center><font color="cyan"><img src="b0.jpg" width=400 height=70 border=5></font></center><br>
+
+Bubble sort starts with very first two elements, comparing them to check which one is greater.<br>
+<center><font color="cyan"><img src="b1.jpg" width=400 height=70 border=5></font></center><br>
+
+In this case, value 33 is greater than 14, so it is already in sorted locations. Next, we compare 33 with 27.<br>
+<center><font color="cyan"><img src="b2.jpg" width=400 height=70 border=5></font></center><br>
+
+We find that 27 is smaller than 33 and these two values must be swapped.<br>
+<center><font color="cyan"><img src="b3.jpg" width=400 height=70 border=5></font></center><br>
+
+The new array should look like this:-<br>
+<center><font color="cyan"><img src="b4.jpg" width=400 height=70 border=5></font></center><br>
+
+Next we compare 33 and 35. We find that both are in already sorted positions.<br>
+<center><font color="cyan"><img src="b5.jpg" width=400 height=70 border=5></font></center><br>
+
+Then we move to the next two values, 35 and 10.<br>
+<center><font color="cyan"><img src="b6.jpg" width=400 height=70 border=5></font></center><br>
+
+We know then that 10 is smaller 35. Hence they are not sorted.<br>
+<center><font color="cyan"><img src="b7.jpg" width=400 height=70 border=5></font></center><br>
+
+We swap these values. We find that we have reached the end of the array. After one iteration, the array should look like this:-<br>
+<center><font color="cyan"><img src="b8.jpg" width=400 height=70 border=5></font></center><br>
+
+To be precise, we are now showing how an array should look like after each iteration. After the second iteration, it should look like this:-<br>
+<center><font color="cyan"><img src="b9.jpg" width=400 height=70 border=5></font></center><br>
+
+Notice that after each iteration, at least one value moves at the end.<br>
+<center><font color="cyan"><img src="b10.jpg" width=400 height=70 border=5></font></center><br>
+
+And when there's no swap required, bubble sorts learns that an array is completely sorted.<br>
+<center><font color="cyan"><img src="b11.jpg" width=400 height=70 border=5></font></center><br>
+
+
+<h2><font color="yellow" face="harrington">Bubble Sort working model:-</font></h2>
+<p><font color="white">Until the data in the list is sorted in ascending order the operation will be performed.
+<br>
+<center><font color="cyan">
+<img src="bubblegif.gif" alt="animated gif" height=300 width=400 border=7>
+</font></center></img>
+<br>
+
+<h2><font color="yellow" face="harrington">Time complexity chart:-</font></h2><br>
+<center><table border=5 bordercolor="cyan">
+<tr>
+	<td>
+		<font size=5 color="yellow">CASES</font>
+	</td>
+	<td>
+		<font size=5 color="yellow">TIME COMPLEXITY</font>
+	</td>
+</tr>
+<tr>
+	<td>
+		<font color="white">
+				<pre>Best case:-    <br></pre> 
+			     	<pre>Average case:- <br></pre>
+			     	<pre>Worst case:-   </pre>
+		</font>
+	</td>
+	<td>
+		<font color="white">
+			<pre>     O(n)<br></pre>
+			<pre>     O(n<sup>2</sup>)<br></pre>
+			<pre>     O(n<sup>2</sup>)</pre>
+	</td>
+</tr>
+</table>
+</center>
+<br>
+<br>		
+<a name="bottom"></a>
+</div>
+</body>
+</html>

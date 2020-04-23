@@ -1,0 +1,155 @@
+﻿<html>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="styles.css" rel="stylesheet">
+    <title>quick</title>
+<style>
+
+	
+
+	.circles
+	{
+    		position: absolute;
+    		top: 0 auto;
+    		left: 0 auto;
+    		width: 95%;
+    		height: 383%;
+    		overflow:hidden;
+	}
+	
+</style>
+</head>
+
+<body>
+<div class="area" >
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+
+	<ul class="circles1">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+
+
+<a href="minipro.html"><img src="home5.jpg" width=50 height=50 align="left" title=HOME></a>
+
+<a href="#bottom"><img src="down.jpg" width=60 height=60 align="right" title=BOTTOMPAGE></a>
+
+
+<h1><center><font color="cyan" size=7 face="system">Quick Sort</center></font></h1>
+
+<h2><font color="yellow" face="harrington">Definition:-</font></h2>
+<p><font color="white">
+
+		Quick sort is a highly efficient sorting algorithm and is based on partitioning of array of data into smaller arrays.
+		A large array is partitioned into two arrays one of which holds values smaller than the specified value, say pivot, based on which the partition is made and another array holds values greater than the pivot value.
+		Quick sort partitions an array and then calls itself recursively twice to sort the two resulting subarrays. This algorithm is quite efficient for large-sized data sets as its average and worst case complexity are of O(n<sup>2</sup>).
+		where n is the number of items.
+	</font>
+
+<h2><font color="yellow" face="harrington">Algorithm:-</font></h2>
+<p><font color="white">
+
+There are many different versions of quickSort that pick pivot in different ways.<br>
+
+*Always pick first element as pivot.<br>
+*Always pick last element as pivot <br>
+*Pick a random element as pivot.<br>
+*Pick median as pivot.<br><br>
+
+Step 1 − Choose the highest index value has pivot<br>
+Step 2 − Take two variables to point left and right of the list excluding pivot<br>
+Step 3 − left points to the low index<br>
+Step 4 − right points to the high<br>
+Step 5 − while value at left is less than pivot move right<br>
+Step 6 − while value at right is greater than pivot move left<br>
+Step 7 − if both step 5 and step 6 does not match swap left and right<br>
+Step 8 − if left ≥ right, the point where they met is new pivot<br>
+
+<pre>/* low  --> Starting index,  high  --> Ending index */
+quickSort(arr[], low, high)
+{
+    if (low < high)
+    {
+        /* pi is partitioning index, arr[pi] is now
+           at right place */
+        pi = partition(arr, low, high);
+
+        quickSort(arr, low, pi - 1);  // Before pi
+        quickSort(arr, pi + 1, high); // After pi
+    }
+}
+</pre>
+
+<h2><font color="yellow" face="harrington">How Quick Sort Works?</font></h2>
+<p><font color="white">
+
+Following animated representation explains how to find the pivot value in an array and also explains how to 
+create two partions to set a pivot value at the middle of array.<br>
+Partion:1 contains the data elements less than pivot value.<br>
+Partion:2 contains the data elements greater than pivot value.
+<br>
+<center><font color="cyan">
+<img src="quicksort.gif" alt="animated gif" height=400 width=500 border=7>
+</font></center><br></img>
+
+The pivot value divides the list into two parts. 
+And recursively, we find the pivot for each sub-lists until all lists contains only one element.<br>
+<center><font color="cyan">
+<img src="quicksort1.gif" alt="animated gif" height=400 width=500 border=7>
+</font></center>
+As shown above we obtain a final sorted array.
+<br>
+
+
+<h2><font color="yellow" face="harrington">Time complexity chart:-</font></h2><br>
+<center><table border=5 bordercolor="cyan">
+<tr>
+	<td>
+		<font size=5 color="yellow">CASES</font>
+	</td>
+	<td>
+		<font size=5 color="yellow">TIME COMPLEXITY</font>
+	</td>
+</tr>
+<tr>
+	<td>
+		<font color="white">
+				<pre>Best case:-    <br></pre> 
+			     	<pre>Average case:- <br></pre>
+			     	<pre>Worst case:-   </pre>
+		</font>
+	</td>
+	<td>
+		<font color="white">
+			<pre>     O(nlogn)<br></pre>
+			<pre>     O(nlogn)<br></pre>
+			<pre>     O(n<sup>2</sup>)</pre>
+	</td>
+</tr>
+</table>
+</center>		
+
+<a name="bottom"></a>
+
+</div>
+</body>
+</html>

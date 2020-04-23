@@ -1,0 +1,154 @@
+﻿<html>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="styles.css" rel="stylesheet">
+    <title>heap</title>
+<style>
+
+	
+
+	.circles
+	{
+    		position: absolute;
+    		top: 0 auto;
+    		left: 0 auto;
+    		width: 95%;
+    		height: 518%;
+    		overflow:hidden;
+	}
+	
+</style>
+</head>
+
+<body>
+
+
+<div class="area" >
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+
+	<ul class="circles1">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+
+<a href="minipro.html"><img src="home5.jpg" width=50 height=50 align="left" title=HOME></a>
+
+<a href="#bottom"><img src="down.jpg" width=60 height=60 align="right" title=BOTTOMPAGE></a>
+
+<h1><center><font color="cyan" size=7 face="system">Heap sort</center></font></h1>
+
+<h2><font color="yellow" face="harrington">Definition:-</font></h2>
+<p><font color="white">
+
+		Heap is a special case of balanced binary tree data structure where the root-node key is compared with its children and arranged accordingly.<br>
+		If a has child node ß then:-[key(a) = key(ß)].<br>
+
+	As the value of parent is greater than that of child, this property generates Max Heap.<br>
+	Based on this criteria, a heap can be of two types:-<br>
+	1)MIN Heap.<br>
+	2)MAX Heap.
+</font><br><br>
+
+<font color="cyan">Min-Heap:-</font><font color="white">Where the value of the root node is less than or equal to either of its children.</font><br>
+<center><font color="yellow">For Input :- 35 33 42 10 14 19 27 44 26 31.</font><br></center><br>
+<center><font color="cyan"><img src="min.jpg" width=400 height=300 border=5></font></center><br>
+
+<font color="cyan">Max-Heap:-</font><font color="white">Where the value of the root node is greater than or equal to either of its children.<br><br>
+<center><font color="yellow">For Input :- 35 33 42 10 14 19 27 44 26 31.</font><br></center><br>
+<center><font color="cyan"><img src="max.jpg" width=400 height=300 border=5></font></center><br>
+
+Both trees are constructed using the same input and order of arrival.
+
+
+<h2><font color="yellow" face="harrington">Max Heap Construction Algorithm:-</font></h2>
+<p><font color="white">
+
+	We shall use the same example to demonstrate how a Max Heap is created. 
+	The procedure to create Min Heap is similar but we go for min values instead of max values.<br>
+
+We are going to derive an algorithm for max heap by inserting one element at a time. 
+At any point of time, heap must maintain its property. 
+While insertion, we also assume that we are inserting a node in an already heapified tree.<br><br>
+	Step 1 - Create a new node at the end of heap.<br>
+	Step 2 - Assign new value to the node.<br>
+	Step 3 - Compare the value of this child node with its parent.<br>
+	Step 4 - If value of parent is less than child, then swap them.<br>
+	Step 5 - Repeat step 3 & 4 until Heap property holds.<br><br>
+
+<font color="cyan">Note:-</font>In Min Heap construction algorithm, we expect the value of the parent node to be less than that of the child node.<br><br>
+
+Let's understand Max Heap construction by an animated illustration.<br><br>
+<center><font color="cyan">
+<img src="maxcons.gif" alt="animated gif" height=400 width=500 border=7>
+</font></center><br></img>
+
+
+<h2><font color="yellow" face="harrington">Max Heap Deletion Algorithm:-</font></h2>
+<p><font color="white">
+
+Let us derive an algorithm to delete from max heap.<br>
+Deletion in Max (or Min) Heap always happens at the root to remove the Maximum (or minimum) value.<br>
+
+Step 1 - Remove root node.<br>
+Step 2 - Move the last element of last level to root.<br>
+Step 3 - Compare the value of this child node with its parent.<br>
+Step 4 - If value of parent is less than child, then swap them.<br>
+Step 5 - Repeat step 3 & 4 until Heap property holds.<br><br>
+
+Let's understand Max Heap deletion by an animated illustration.<br><br>
+<center><font color="cyan">
+<img src="maxdel.gif" alt="animated gif" height=400 width=500 border=7>
+</font></center><br></img>
+
+<h2><font color="yellow" face="harrington">Time complexity chart:-</font></h2><br>
+<center><table border=5 bordercolor="cyan">
+<tr>
+	<td>
+		<font size=5 color="yellow">CASES</font>
+	</td>
+	<td>
+		<font size=5 color="yellow">TIME COMPLEXITY</font>
+	</td>
+</tr>
+<tr>
+	<td>
+		<font color="white">
+				<pre>Best case:-    <br></pre> 
+			     	<pre>Average case:- <br></pre>
+			     	<pre>Worst case:-   </pre>
+		</font>
+	</td>
+	<td>
+		<font color="white">
+			<pre>     O(nlogn)<br></pre>
+			<pre>     O(nlogn)<br></pre>
+			<pre>     O(nlogn)</pre>
+	</td>
+</tr>
+</table>
+</center>		
+
+<a name="bottom"></a>
+
+</div>
+</body>
+</html>

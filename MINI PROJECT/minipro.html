@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="styles.css" rel="stylesheet">
+    <title>Sort Visualizer</title>
+
+
+
+
+<style>
+body
+{
+ animation: back_animate 25s infinite linear;
+}
+@keyframes back_animate 
+{
+ 0%{background-color:aqua;}
+ 10%{background-color:orange;}
+ 20%{background-color:silver;}
+ 30%{background-color:yellow;}
+ 40%{background-color:lime;}
+ 50%{background-color:gold;}
+ 60%{background-color:pink;}
+ 70%{background-color:cream;} 
+ 80% {background-color:grey;}
+ 90%{background-color:cyan;}
+ 100%{background-color:magneta;}
+}
+
+</style>
+</head>
+<body>
+
+<center><h1><font size=8 color="red" face="Copperplate Gothic">SORTING TECHNIQUES</font></h1></center>
+<hr align="right" size=5 color="black"></hr>
+<hr align="right" size=4 color="red"></hr>
+<hr align="right" size=5 color="black"></hr>
+
+<p><font size=5 color="red" face="Lucida Calligraphy">SORTING:-</font>
+<p><font color="black" size=4 face="Times New Roman">
+		Sorting is any process of arranging items systematically. It can be divided as follows:-
+		<br>
+		(1)<font color="green"><u>Ordering:</U></font> arranging items in a sequence ordered by some criterion.<br>
+		(2)<font color="green"><u>Categorizing:</U></font> grouping items with similar properties.
+</p></font>
+
+<p><font color="red" size=5 face="Lucida Calligraphy">
+	Types of Sorting Techniques:-<br></font></P>
+<font color="black" size=4 face="Times New Roman">
+	(1)Bubble Sort.<br>
+	(2)Selection Sort.<br>
+	(3)Merge Sort.<br>
+	(4)Insertion Sort.<br>
+	(5)Quick Sort.<br>
+	(6)Heap Sort.
+</font></p>
+
+<p><center><font size=7 color="red" face="Digital-7"><B>SORTING VISUALIZER<B></font></center></p>
+
+<canvas id="canvas" width="800" height="420"></canvas>
+
+<div id="sort">
+	<button id="selection" onclick="selectionSort(Arr)">Selection Sort</button>
+	<button id="insertion" onclick="insertionSort(Arr)">Insertion Sort</button>
+
+	<button id="bubble" onclick="bubbleSort(Arr)">Bubble<br> Sort</button>
+	<button id="quick" onclick="quickSort(Arr)">Quick<br> Sort</button>
+	<button id="merge" onclick="mergeSort(Arr)">Merge<br>Sort</button>
+	<button id="heap" onclick="heapSort(Arr)">Heap <br> Sort</button>
+	<button id="reverse" onclick="reverseArr(Arr)">Reverse Array</button>
+	<button id="randomize" onclick="randomArr()">Randomize Array</button>
+</div>
+
+<div id="rgn">
+	<p>Delay Time :</p><input type="range" id="rangeTime" min="100" max="300" value="150"><span id="showTime">150</span>
+	<p>Array Length :</p><input type="range" id="rangeArr" min="10" max="35" value="22"><span id="showLength">22</span>
+
+<br>
+<br>	
+<center><font color="red" size=5 face="harrington">To Know More About Sortings<br> Click Below Links<br>
+	<img src="down1.gif" width=50 height=50>
+	<img src="down1.gif" width=50 height=50>
+	<img src="down1.gif" width=50 height=50>
+	<img src="down1.gif" width=50 height=50>
+</img></font></center>
+
+	<a href="bubblesort.html" class="button">BUBBLE SORT</a>
+	<a href="selectionsort.html" class="button">SELECTION SORT</a>
+	<a href="insertionsort.html" class="button">INSERTION SORT</a>
+	<a href="mergesort.html" class="button">MERGE SORT</a>
+	<a href="heapsort.html" class="button">HEAP SORT</a>
+	<a href="quicksort.html" class="button">QUICK SORT</a>
+
+</div>
+
+<h2><center><font color="red" size=6 face="harrington">Time complexity chart</font></h2></center>
+<center>
+<style>
+table {border:solid 5px blue; background-image:url(3.gif);}
+th{border:solid 3px cyan; color:yellow;}
+td{border:solid 3px cyan; color:white;}
+tr{border:solid 3px cyan;}
+</style>
+
+<table>
+<tr>
+	
+	<th>
+		<font size=5>Sortings</font>
+	</th>
+	<th>
+		<font size=5>Best case</font>
+	</th>
+	<th>
+		<font size=5>Avg case</font>
+	</th>
+	<th>
+		<font size=5>Worst case</font>
+	</th>
+<tr>
+
+<tr>
+
+	<th>
+	<pre>Bubble Sort:-    </pre>
+	</th>
+	<td>
+	<pre>     O(n)</pre>
+	</td>
+	<td>
+	<pre>     O(n<sup>2</sup>)</pre>
+	</td>
+	<td>
+	<pre>     O(n<sup>2</sup>)</pre>
+	</td>
+</tr>
+
+<tr>
+	
+	<th>
+	<pre>Insertion Sort:-    </pre>
+	</th>
+	<td>
+	<pre>     O(n)</pre>
+	</td>
+	<td>
+	<pre>     O(n<sup>2</sup>)</pre>
+	</td>
+	<td>
+	<pre>     O(n<sup>2</sup>)</pre>
+	</td>
+</tr>
+
+<tr>
+	
+	<th>
+	<pre>Selection Sort:-    </pre>  
+	</th>
+	<td>
+	<pre>     O(n<sup>2</sup>)</pre>
+	</td>
+	<td>
+	<pre>     O(n<sup>2</sup>)</pre>
+	</td>
+	<td>
+	<pre>     O(n<sup>2</sup>)</pre>
+	</td>
+</tr>
+
+<tr>
+	
+	<th>
+	<pre>Merge Sort:-    </pre>
+	</th>
+	<td>
+	<pre>     O(nlogn)</pre>
+	</td>
+	<td>
+	<pre>     O(nlogn)</pre>
+	</td>
+	<td>
+	<pre>     O(nlogn)</pre>
+	</td>
+</tr>
+
+<tr>
+
+	<th>
+	<pre>Heap Sort:-    </pre>
+	</th>
+	<td>
+	<pre>     O(nlogn)</pre>
+	</td>
+	<td>
+	<pre>     O(nlogn)</pre>
+	</td>
+	<td>
+	<pre>     O(nlogn)</pre>
+	</td>
+</tr>
+
+<tr>
+	<th>
+	<pre>Quick sort:-    </pre>
+	</th>
+	<td>
+	<pre>     O(nlogn)</pre>
+	</td>
+	<td>
+	<pre>     O(nlogn)</pre>
+	</td>
+	<td>
+	<pre>     O(n<sup>2</sup>)</pre>
+	</td>
+</tr> 
+</table>
+</center>
+	
+<script src="script.js" type="text/javascript"></script>
+</body>
+</html>
